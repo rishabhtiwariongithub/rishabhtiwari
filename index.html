@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/dc55826fc4.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_transparent.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#contact">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Rishabh</span><br> Tiwari From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_back.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Worked as a full stack web developer at Manorama. I have 1.0+
+                        experience in Html, CSS and Javascript, Python and I'm currently exploring opportunities in Android Development,
+                        python . Talking about my achievements I have solved 100+ Python problem as well as I’m currently an intermediate on Css Battle and solved
+                        150+ problems there. I am a Third finalist in AI Creation of robot From SRMU. I have a decent problem solving
+                        skills and I’m now looking for other opportunities where i can get exposure to
+                        various technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>CSS</span><br>Solved hundreds of problems on CSS Battle,Leetcode</li>
+                            <li><span>Web Development</span><br>Python | PHP | JQUERY | SQL | JAVASCRIPT | HTML | CSS</li>
+                            <li><span>Programming Language</span><br>Java | Python | JavaScript|HTML|SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2021</span><br>Web Developer at Anteelo|Design Pvt ltd.</li>
+                            <li><span>2022-2023</span><br>Full Stack Developer At manorama.</li>
+                            <li><span>2020</span><br>Workshop in Android Development at IIT-BHU.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>Bachelors of Technology at  Shri Ramswaroop Memorial University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Strengths</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python</h2>
+                    <p>Having solved over 200 problems on various
+                        platforms including leetcode, codestudio
+                        I am capable of solving complex problems
+                        and can guide people on how to approach
+                        various topics in Python and Database.
+                    </p>
+                    <a href="https://leetcode.com/youcancallmekartik/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>I have pretty decent experience in various technologies
+                        such as Python, ManualTesting, Wordpress, Json on the 
+                        backend
+                        whereas I do code in Java and also worked on frontend
+                        languages like HTML , Javascript, CSS, PHP which makes me a worthy
+                        full stack developer. I've been in this field for more than
+                        1 years now and I'm still learning new things daily.
+                    </p>
+                    <a href="https://github.com/Kartikk1127">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Content Writing</h2>
+                    <p>I used to write blogs for over 6 months from 2020-2021 in fitness
+                        and nutrition and helped people live a healthy
+                        lifestyle just by writing blogs. 
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Ecommerce</h3>
+                        <p>A full stack web application where customers can browse through products, add items to their
+                            cart, make secure payments, and have the products delivered to their doorstep. The
+                            application typically includes features such as product listings, shopping carts, checkout
+                            pages, secure payment processing etc. Currently working on authentication part.</p>
+                        <a href="https://github.com/rishabhtiwariongithub/Shopie.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Facebook Clone</h3>
+                        <p>A Facebook Clone where i  was trying to achieve the facebook Properties while learning more about db and the single page web applications.
+                        </p>
+                        <a href="https://github.com/rishabhtiwariongithub/PoweredbyGatario.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Canva|Design</h3>
+                        <p>Here I Have used HTML, CSS And Javascript with canva Where ive tried to achieve the motion blending and motion capture features using Google and youtube</p>
+                        <a href="https://github.com/rishabhtiwariongithub/PoweredbyRishabh.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>E-Shop</h3>
+                        <p>I am proud to present my e-commerce venture, Shopie Land, as a central element of my portfolio. we have passionately leveraged the power of e-commerce to [briefly describe your mission or goal, e.g., "connect consumers with high-quality fashion products at affordable prices" or "provide innovative tech solutions to small businesses"]. Our journey in the e-commerce landscape has been marked by dedication, innovation.
+                        </p>
+                        <a href="https://github.com/rishabhtiwariongithub/E-Cart.git"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Officialrishabhtiwari21@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i> +91 9794159484</p> -->
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://twitter.com/Thismerishabh"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rishtiwari01/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rishabhtiwariongithub"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <!-- <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Rishabh.Made with <i class="fa-solid fa-heart"></i>
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
